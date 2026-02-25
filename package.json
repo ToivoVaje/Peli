@@ -1,0 +1,20 @@
+{
+  "name": "cube-labyrinth",
+  "version": "0.1.0",
+  "description": "Simple browser game: a tilting cube containing a maze and a glowing ball affected by gravity.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "threejs",
+    "game",
+    "labyrinth",
+    "cube"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.164.0"
+  }
+}
+
