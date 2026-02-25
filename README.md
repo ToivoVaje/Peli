@@ -25,6 +25,16 @@ npm run start
 
 Then open in the browser the address printed by `serve` (usually something like `http://localhost:3000`).
 
+## Difficulty levels
+
+When you first open the game, you must choose a difficulty:
+
+- **Easy**: smaller cube, fewer maze cells (3×3 grid per level) and shorter paths.
+- **Medium**: default cube size and maze density (4×4 grid per level).
+- **Hard**: larger cube with a denser maze (6×6 grid per level) and longer, more winding routes.
+
+Each time you click **New level** after finishing, a new random maze is generated with the same difficulty.
+
 ## Technical notes
 
 - **Three.js** is loaded directly from a CDN as an ES module, so no bundler or build step is required.
