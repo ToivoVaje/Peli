@@ -203,6 +203,41 @@
           0 0 14px rgba(103, 204, 255, 0.7),
           0 0 6px rgba(0, 0, 0, 0.8);
       }
+      .restart-button {
+        position: fixed;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        padding: 0.45rem 1.15rem;
+        border-radius: 999px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: rgba(4, 10, 22, 0.9);
+        color: #e3f1ff;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(120, 170, 255, 0.8);
+        transition:
+          transform 0.12s ease-out,
+          box-shadow 0.12s ease-out,
+          background 0.12s ease-out,
+          color 0.12s ease-out;
+      }
+      .restart-button:hover {
+        transform: translateY(-1px) scale(1.02);
+        background: rgba(18, 40, 86, 0.98);
+        box-shadow:
+          0 0 18px rgba(120, 170, 255, 0.95),
+          0 0 10px rgba(0, 0, 0, 0.9);
+      }
+      .restart-button:active {
+        transform: translateY(0) scale(0.98);
+        box-shadow:
+          0 0 12px rgba(120, 170, 255, 0.7),
+          0 0 6px rgba(0, 0, 0, 0.8);
+      }
     </style>
   </head>
   <body>
@@ -225,6 +260,7 @@
         <button id="new-level-btn" class="win-button">New level</button>
       </div>
     </div>
+    <button id="restart-btn" class="restart-button">Restart</button>
     <div class="hud">
       <div class="hud-dot"></div>
       <div>
